@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الكورسات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>موقع الكورسات</h1>
+        <form id="courseForm">
+            <div class="form-group">
+                <label for="courseName">اسم الكورس:</label>
+                <input type="text" id="courseName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="coursePrice">سعر الكورس:</label>
+                <input type="number" id="coursePrice" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseVideos">عدد الفيديوهات:</label>
+                <input type="number" id="courseVideos" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseInstructor">المدرس:</label>
+                <input type="text" id="courseInstructor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="courseCategory">التصنيف:</label>
+                <select id="courseCategory" required>
+                    <option value="تكنولوجيا">تكنولوجيا</option>
+                    <option value="لغة">لغة</option>
+                    <option value="تصميم">تصميم</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="courseImage">صورة الكورس:</label>
+                <input type="file" id="courseImage" accept="image/*" required>
+            </div>
+
+            <button type="submit">إضافة الكورس</button>
+        </form>
+
+        <h2>الكورسات المتاحة:</h2>
+        <div id="coursesList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
